@@ -10,6 +10,8 @@ import Foundation
 
 class Customer: IDisplay
 {
+    
+    
     var customerId: Int
     var firstName: String
     var lastName: String
@@ -37,6 +39,11 @@ class Customer: IDisplay
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+        
+    }
+    
+    func printData()
+    {
         
     }
     
