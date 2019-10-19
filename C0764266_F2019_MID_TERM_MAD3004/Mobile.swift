@@ -16,5 +16,9 @@ class Mobile: Bill
     var internetGbUsed: Int
     var minuteUsed: Int
     
-    
+    init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGbUsed: Int, minuteUsed: Int)
+        {
+            
+     
+    }
 }
