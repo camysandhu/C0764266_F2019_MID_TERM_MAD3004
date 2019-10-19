@@ -17,11 +17,11 @@ class Bill: IDisplay
     
     
     var billId: Int
-    var billDate: String
+    var billDate: Date
     var billType: billTypes
     var totalBillAmount: Double
     
-    init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double)
+    init(billId: Int, billDate: Date, billType: billTypes, totalBillAmount: Double)
     {
         self.billId = billId
         self.billDate = billDate
@@ -32,8 +32,10 @@ class Bill: IDisplay
     
     func printData()
     {
-        print("Id:- \(billId)",
-            "billDate:- \(billDate)",
+        print("------Bill Info---------",
+              "\n************************************",
+            "Id:- \(billId)",
+            "billDate:- \(billDate.formattedDate())",
             "billType:- \(billType)",
             "totalBillAmount:- \(totalBillAmount)")
         
