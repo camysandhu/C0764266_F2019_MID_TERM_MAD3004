@@ -71,4 +71,8 @@ for customer in customerArray
     {
         customer.printData()
 }
+    
+    customerArray.sort { (a1, a2) -> Bool in
+        a1.totalAmountToPay > a2.totalAmountToPay
+    }
 }
