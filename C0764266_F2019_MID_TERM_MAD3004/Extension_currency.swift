@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Currency
+extension Double
 {
     public func currencyFormatter() -> String
     {

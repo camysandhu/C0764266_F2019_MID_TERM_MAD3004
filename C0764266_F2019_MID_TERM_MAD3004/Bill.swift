@@ -21,6 +21,8 @@ class Bill: IDisplay
     var billType: billTypes
     var totalBillAmount: Double
     
+    
+    
     init(billId: Int, billDate: Date, billType: billTypes, totalBillAmount: Double)
     {
         self.billId = billId
@@ -34,11 +36,10 @@ class Bill: IDisplay
     {
         print("------Bill Info---------",
               "\n************************************",
-            "Id:- \(billId)",
-            "billDate:- \(billDate.formattedDate())",
-            "billType:- \(billType)",
-            "totalBillAmount:- \(totalBillAmount)")
-        
+            "\nId:- \(billId)",
+            "\nbillDate:- \(billDate.formattedDate())",
+            "\nbillType:- \(billType)",
+            "\ntotalBillAmount:- \(totalBillAmount.currencyFormatter())")
     }
     
 }

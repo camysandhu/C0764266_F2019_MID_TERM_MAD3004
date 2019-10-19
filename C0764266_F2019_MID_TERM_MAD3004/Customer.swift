@@ -50,7 +50,7 @@ class Customer: IDisplay
         {
             bill.value.printData()
         }
-        print("TotalAmountToPay: \(totalAmountToPay)")
+        print("\nTotalAmountToPay: \(totalAmountToPay)")
     }
     
 }

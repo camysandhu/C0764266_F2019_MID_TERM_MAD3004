@@ -18,7 +18,7 @@ class Internet: Bill
         self.providerName = providerName
         self.internetGbUsed = internetGbUsed
         
-        super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
+        super.init(billId: billId, billDate: Date(), billType: billType, totalBillAmount: totalBillAmount)
     }
     
     override func printData()

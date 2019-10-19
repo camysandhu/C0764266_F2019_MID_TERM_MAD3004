@@ -16,7 +16,7 @@ class Mobile: Bill
     var internetGbUsed: Int
     var minuteUsed: Int
     
-    init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGbUsed: Int, minuteUsed: Int)
+    init(billId: Int, billDate: Date, billType: billTypes, totalBillAmount: Double, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGbUsed: Int, minuteUsed: Int)
         {
             self.mobileManufacturerName = mobileManufacturerName
             self.planName = planName
@@ -31,10 +31,10 @@ class Mobile: Bill
     {
         super.printData()
         print("ManufacturerName: \(mobileManufacturerName)",
-            "PlanName: \(planName)",
-            "MobileNumber: \(mobileNumber)",
-            "InternetUsed: \(internetGbUsed)",
-            "MinuteUsed: \(minuteUsed)"
+            "\nPlanName: \(planName)",
+            "\nMobileNumber: \(mobileNumber)",
+            "\nInternetUsed: \(internetGbUsed)",
+            "\nMinuteUsed: \(minuteUsed)"
         )
     }
 }

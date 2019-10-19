@@ -24,5 +24,4 @@ extension Int
     return String.init(format: "%d minutes", self)
     }
     
-
 }
