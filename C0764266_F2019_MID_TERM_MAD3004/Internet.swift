@@ -13,5 +13,8 @@ class Internet: Bill
     var providerName: String
     var internetGbUsed: Int
     
-    
+    init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double)
+    {
+        
+    }
 }
