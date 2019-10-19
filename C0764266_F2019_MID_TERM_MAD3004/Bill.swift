@@ -21,7 +21,12 @@ class Bill
     
     init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double)
     {
+        self.billId = billId
+        self.billDate = billDate
+        self.billType = billType
+        self.totalBillAmount = totalBillAmount
         
     }
+    
     
 }
