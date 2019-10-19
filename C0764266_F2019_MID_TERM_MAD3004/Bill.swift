@@ -32,7 +32,11 @@ class Bill: IDisplay
     
     func printData()
     {
-        <#code#>
+        print("Id:- \(billId)",
+            "billDate:- \(billDate)",
+            "billType:- \(billType)",
+            "totalBillAmount:- \(totalBillAmount)")
+        
     }
     
 }
