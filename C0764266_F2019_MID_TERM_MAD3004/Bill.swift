@@ -14,6 +14,11 @@ enum billTypes
 }
 class Bill
 {
+    var billId: Int
+    var biiiDate: String
+    var billType: billTypes
+    var totalBillAmount: Double
+    
     
     
 }
