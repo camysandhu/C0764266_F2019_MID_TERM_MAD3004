@@ -27,3 +27,15 @@ var b5 = Hydro(billId: 1, billDate: Date(), billType: billTypes.Hydro, totalBill
 var b6 = Hydro(billId: 2, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 145.4, agencyName: "Toronto Lines", unitConsumed: 76)
 
 
+var cust1 = Customer(customerId: 1, firstName: "Camy", lastName: "Sandhu", email: "camysandhu123@gmail.com")
+cust1.billDictionary[1] = b1
+cust1.billDictionary[2] = b3
+
+var cust2 = Customer(customerId: 2, firstName: "Ankita", lastName: "Sharma", email: "ankita321@gmail.com")
+cust2.billDictionary[1] = b2
+cust2.billDictionary[2] = b6
+cust2.billDictionary[3] = b5
+
+var cust3 = Customer(customerId: 3, firstName: "Ramandeep", lastName: "Dhillon", email: "ramandhilon456@gmail.com")
+
+cust3.billDictionary[1] = b4
