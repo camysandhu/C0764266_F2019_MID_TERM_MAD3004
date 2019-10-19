@@ -20,4 +20,11 @@ class Hydro: Bill
         
         super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
     }
+    
+    func printData()
+    {
+        print("AgencyName: \(agencyName)",
+            "UnitsConsumed; \(unitConsumed)",
+        "\n*******************************")
+    }
 }
