@@ -15,7 +15,7 @@ class Customer: IDisplay
     var customerId: Int
     var firstName: String
     var lastName: String
-    var fullname: String
+    var fullName: String
     {
         return "\(self.firstName)\(self.lastName)"
     }
@@ -44,7 +44,13 @@ class Customer: IDisplay
     
     func printData()
     {
+        print(customerId,fullName,email)
         
+        for bill in billDictionary
+        {
+            bill.value.printData()
+        }
+        print("TotalAmountToPay: \(totalAmountToPay)")
     }
     
 }
