@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Customer
+class Customer: IDisplay
 {
     var customerId: Int
     var firstName: String
@@ -31,5 +31,13 @@ class Customer
         return totalAmount
     }
     
+    init(customerId: Int, firstName: String, lastName: String, email: String)
+    {
+        self.customerId = customerId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        
+    }
     
 }
