@@ -21,8 +21,11 @@ class Internet: Bill
         super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
     }
     
-    func printData()
+    override func printData()
     {
-        
+        super.printData()
+        print("ProviderName: " , self.providerName,
+              "\nInternetUsed: ", self.internetGbUsed,
+              "\n***********************************************")
     }
 }
