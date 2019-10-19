@@ -25,8 +25,15 @@ class Mobile: Bill
             self.minuteUsed = minuteUsed
             
             super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
-            
-            
-     
+            }
+    
+    func printData()
+    {
+        print("ManufacturerName: \(mobileManufacturerName)",
+            "PlanName: \(planName)",
+            "MobileNumber: \(mobileNumber)",
+            "InternetUsed: \(internetGbUsed)",
+            "MinuteUsed: \(minuteUsed)"
+        )
     }
 }
