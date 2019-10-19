@@ -11,5 +11,25 @@ import Foundation
 class Customer
 {
     var customerId: Int
-    var 
+    var firstName: String
+    var lastName: String
+    var fullname: String
+    {
+        return "\(self.firstName)\(self.lastName)"
+    }
+    
+    
+    var email: String
+    var billDictionary = [Int:Bill]()
+    var totalAmountToPay: Double
+    {
+        var totalAmount = 0.0
+        for bill in billDictionary
+        {
+            totalAmount = totalAmount + bill.value.totalBillAmount
+        }
+        return totalAmount
+    }
+    
+    
 }
