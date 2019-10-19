@@ -12,8 +12,10 @@ enum billTypes
 {
    case Mobile, Internet, Hydro, None
 }
-class Bill
+class Bill: IDisplay
 {
+    
+    
     var billId: Int
     var billDate: String
     var billType: billTypes
@@ -28,5 +30,9 @@ class Bill
         
     }
     
+    func printData()
+    {
+        <#code#>
+    }
     
 }
