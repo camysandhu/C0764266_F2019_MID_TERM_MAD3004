@@ -15,10 +15,13 @@ enum billTypes
 class Bill
 {
     var billId: Int
-    var biiiDate: String
+    var billDate: String
     var billType: billTypes
     var totalBillAmount: Double
     
-    
+    init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double)
+    {
+        
+    }
     
 }
