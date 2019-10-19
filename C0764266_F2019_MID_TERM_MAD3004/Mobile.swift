@@ -24,6 +24,9 @@ class Mobile: Bill
             self.internetGbUsed = internetGbUsed
             self.minuteUsed = minuteUsed
             
+            super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
+            
+            
      
     }
 }
