@@ -27,8 +27,9 @@ class Mobile: Bill
             super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
             }
     
-    func printData()
+    override func printData()
     {
+        super.printData()
         print("ManufacturerName: \(mobileManufacturerName)",
             "PlanName: \(planName)",
             "MobileNumber: \(mobileNumber)",
