@@ -18,6 +18,11 @@ class Mobile: Bill
     
     init(billId: Int, billDate: String, billType: billTypes, totalBillAmount: Double, mobileManufacturerName: String, planName: String, mobileNumber: Int, internetGbUsed: Int, minuteUsed: Int)
         {
+            self.mobileManufacturerName = mobileManufacturerName
+            self.planName = planName
+            self.mobileNumber = mobileNumber
+            self.internetGbUsed = internetGbUsed
+            self.minuteUsed = minuteUsed
             
      
     }
