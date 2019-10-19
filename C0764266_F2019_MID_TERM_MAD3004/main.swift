@@ -49,3 +49,26 @@ for customer in customerArray
     customer.printData()
 }
 
+for customer in customerArray
+{
+    if customer.customerId == 1
+    {
+        print("******** Details of Customer ID = 1 ********")
+        customer.printData()
+    }else{
+        print("Customer Not Available")
+    }
+    
+    if customer.customerId == 5
+    {
+        print("******** Details of Customer ID = 5 ********")
+        customer.printData()
+    }else{
+        print("Customer Not Available")
+    }
+    
+    for customer in customerArray
+    {
+        customer.printData()
+}
+}
