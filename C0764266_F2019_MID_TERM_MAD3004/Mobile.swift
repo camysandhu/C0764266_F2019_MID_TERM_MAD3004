@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Mobile
+class Mobile: Bill
 {
     
 }
