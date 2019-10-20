@@ -63,7 +63,9 @@ for customer in customerArray
     {
         print("******** Details of Customer ID = 5 ********")
         customer.printData()
-    }else{
+    }
+    else
+    {
         print("Customer Not Available")
     }
     
