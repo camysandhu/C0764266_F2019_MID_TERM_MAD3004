@@ -44,13 +44,18 @@ class Customer: IDisplay
     
     func printData()
     {
-        print(customerId,fullName,email)
+        print(
+            "Customer Id :" , self.customerId
+            , "\nCustomer Full Name :" , self.fullName
+            , "\nCustomer Email ID : " , self.email
+        )
         
         for bill in billDictionary
         {
             bill.value.printData()
         }
-        print("\nTotalAmountToPay: \(totalAmountToPay)")
+        print("TotalAmountToPay: \(totalAmountToPay.currencyFormatter())",
+        "\n*******************************************")
     }
     
 }
