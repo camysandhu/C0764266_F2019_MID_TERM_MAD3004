@@ -13,7 +13,7 @@ import Foundation
     
     case Home, Car, Business
 }
- class Insurance
+class Insurance: Bill
 {
     var insurancetype: Instypes
     var provider: String
@@ -21,12 +21,14 @@ import Foundation
     var endDate: Date
     var totalInsurance: Double
     
-    init(insurancetype: Instypes, provider: String, startDate: Date, endDate: Date, totalInsurance: Double)
+    init(billId: Int, billDate: Date, billType: billTypes, totalBillAmount: Double, insurancetype: Instypes, provider: String, startDate: Date, endDate: Date, totalInsurance: Double)
     {
         self.insurancetype = insurancetype
         self.provider = provider
         self.startDate = startDate
         self.endDate = endDate
         self.totalInsurance = totalInsurance
+        super.init(billId: billId, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
+
     }
 }
