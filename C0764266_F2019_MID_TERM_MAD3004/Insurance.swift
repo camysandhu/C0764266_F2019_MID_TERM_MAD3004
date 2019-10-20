@@ -7,7 +7,26 @@
 //
 
 import Foundation
+
+ enum Instypes
+ {
+    
+    case Home, Car, Business
+}
  class Insurance
 {
+    var insurancetype: Instypes
+    var provider: String
+    var startDate: Date
+    var endDate: Date
+    var totalInsurance: Double
     
+    init(insurancetype: Instypes, provider: String, startDate: Date, endDate: Date, totalInsurance: Double)
+    {
+        self.insurancetype = insurancetype
+        self.provider = provider
+        self.startDate = startDate
+        self.endDate = endDate
+        self.totalInsurance = totalInsurance
+    }
 }
