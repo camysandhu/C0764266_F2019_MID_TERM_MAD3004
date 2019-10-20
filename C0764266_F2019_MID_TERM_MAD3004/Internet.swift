@@ -25,7 +25,7 @@ class Internet: Bill
     {
         super.printData()
         print("ProviderName: " , self.providerName,
-              "\nInternetUsed: ", self.internetGbUsed,
+              "\nInternetUsed: ", self.internetGbUsed.data(),
               "\n***********************************************")
     }
 }
