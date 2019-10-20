@@ -43,7 +43,7 @@ cust3.billDictionary[1] = b4
 
 var customerArray = [cust1, cust2, cust3]
 
-print("******* Sorted By total Bill Amount**********")
+//print("******* Sorted By total Bill Amount**********")
 for customer in customerArray
 {
     customer.printData()

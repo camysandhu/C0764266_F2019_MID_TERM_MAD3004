@@ -34,7 +34,8 @@ class Mobile: Bill
             "\nPlanName: \(planName)",
             "\nMobileNumber: \(mobileNumber)",
             "\nInternetUsed: \(internetGbUsed.data())",
-            "\nMinuteUsed: \(minuteUsed.minutes())"
+            "\nMinuteUsed: \(minuteUsed.minutes())",
+            "\n*******************************************"
         )
     }
 }
