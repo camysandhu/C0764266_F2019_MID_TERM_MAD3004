@@ -25,7 +25,7 @@ class Hydro: Bill
     {
         super.printData()
         print("AgencyName: \(agencyName)",
-            "UnitsConsumed; \(unitConsumed)",
+            "\nUnitsConsumed: \(unitConsumed.unit())",
         "\n*******************************")
     }
 }

@@ -33,8 +33,8 @@ class Mobile: Bill
         print("ManufacturerName: \(mobileManufacturerName)",
             "\nPlanName: \(planName)",
             "\nMobileNumber: \(mobileNumber)",
-            "\nInternetUsed: \(internetGbUsed)",
-            "\nMinuteUsed: \(minuteUsed)"
+            "\nInternetUsed: \(internetGbUsed.data())",
+            "\nMinuteUsed: \(minuteUsed.minutes())"
         )
     }
 }
